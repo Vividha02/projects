@@ -10,19 +10,20 @@
     <div class="main">
         <div class="Calci">
             <form>
-            <div><input type="text" class="screen" name ="screen" placeholder=""></div>
+            <div><input type="text" id="screen" name ="screen" placeholder=""></div>
             <div class="Button_screen">
                 <div>
-                    <input type="button" value="7" class="button" onclick="screen.value+='7'">
-                    <input type="button" value="8" class="button" onclick="screen.value+='8'">
-                    <input type="button" value="9" class="button" onclick="screen.value+='9'">
-                    <input type="button" value="+" class="button" onclick="screen.value+='+'">
+                    <!-- <input type="button" value="7" class="button" onclick="screen.value+='7'"> -->
+                    <input type="button" value="7" class="button" onclick="display('7')">
+                    <input type="button" value="8" class="button" onclick="display('8')">
+                    <input type="button" value="9" class="button" onclick="display('9')">
+                    <input type="button" value="+" class="button" onclick="display('+')">
                 </div>
                 <div>
-                    <input type="button" value="4" class="button" onclick="screen.value+='4'">
-                    <input type="button" value="5" class="button" onclick="screen.value+='5'">
-                    <input type="button" value="6" class="button" onclick="screen.value+='6'">
-                    <input type="button" value="-" class="button" onclick="screen.value+='-'">
+                    <input type="button" value="4" class="button" onclick="display('4')">
+                    <input type="button" value="5" class="button" onclick="display('5')">
+                    <input type="button" value="6" class="button" onclick="display('6')">
+                    <input type="button" value="-" class="button" onclick="display('-')">
                 </div>
                 <div>
                     <input type="button" value="1" class="button"onclick="screen.value+='1'">
@@ -34,14 +35,28 @@
                     <input type="button" value="0" class="button"onclick="screen.value+='0'">
                     <input type="button" value="." class="button"onclick="screen.value+='.'">
                     <input type="button" value="/" class="button"onclick="screen.value+='/'">
-                    <input type="button" value="C" class="button"onclick="screen.value=' '">
+                    <!-- <input type="button" value="C" class="button"onclick="screen.value=' '"> -->
+                    <input type="button" value="C" class="button" onclick=clearScreen()>
                 </div>
             </div>
             <div>
                 <input type="button" value="=" id="equals" onclick="screen.value=eval(screen.value)">
+                <!-- <input type="button" value="=" id="equals" onclick="screen.value=ans()"> -->
             </div>
         </form>
         </div>
     </div>
+    <script type="text/javascript">
+        function display(value) {
+             document.getElementById("screen").value += value;
+        }
+        function clearScreen() {
+            document.getElementById("screen").value = "";
+        }
+        // function ans()
+        // {
+        //     document.getElementById("screen").value=eval(screen.value);
+        // }
+    </script>
 </body>
 </html>

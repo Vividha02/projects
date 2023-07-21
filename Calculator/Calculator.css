@@ -14,14 +14,14 @@
 }
 .Calci
 {
-    height: 500px;
+    height: 540px;
     width: 420px;
     margin: auto;
     border-radius: 10px;
     border: rgb(7, 131, 247) solid 3px;
     background-color: white;
 }
-.screen
+#screen
 {
      display:flex;
      position: relative;
