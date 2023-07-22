@@ -1,0 +1,88 @@
+*
+{
+    margin:0;
+    padding:0;
+    /* margin-left: 100px; */
+}
+#clgName
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    font-size: 100px;
+    transform: translateX(100%); /* Animation start out of the screen */
+
+    /* Add the animation */
+    animation: move 30s linear infinite /* infinite make reapeat the animation indefinitely */;
+}
+
+/* Create the animation */
+@keyframes move {
+  to { transform: translateX(-100%); }
+}
+
+.image
+{
+    background-image: url("Form\ background.jpg");
+    height: 700px;
+    position: absolute;
+    /* width: 1920px; */
+    width: 100%;
+    background-position: center center;
+}
+#heading
+{
+    font-size: 80px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.List
+{
+    width: 50%;
+    margin: auto;
+    /* border: red solid 2px; */
+}
+input{
+    width: 285px;
+    height: 40px;
+    margin-right: 20px;
+    /* background-color: aquamarine; */
+}
+::placeholder
+{
+    font-size: 20px;
+}
+#date
+{
+    font-size: 20px;
+}
+#course
+{
+    width: 285px;
+    height: 40px;
+    font-size: 20px;
+}
+#fileUpload
+{
+    width: 285px;
+    height: 40px;
+    font-size: 20px;
+}
+#url
+{
+    width: 90%;
+}
+#submit, #reset
+{
+    font-size: 20px;
+}
+/* div{
+    height: auto;
+    width: 75%; 
+    display: flex;
+    margin: auto;
+    justify-content: center; 
+} */
+

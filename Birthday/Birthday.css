@@ -2,8 +2,7 @@
 {
    padding: 0;
    margin: 0; 
-   align-items: center;
-
+   /* align-items: center; */
 }
 #main
 {
@@ -11,11 +10,12 @@
     width: 600px;
     margin: auto;
     display: flex;   
-    justify-content: center; 
+    /* justify-content: center;  */
     background-color: white;
     border:pink solid 10px;
 }
-.fa fa-star
+.stars
 {
-    
+    margin: 10px;
 }
+
