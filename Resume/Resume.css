@@ -1,0 +1,84 @@
+*{
+    font-style: italic;
+}
+.header
+{
+  text-align: center;
+  margin-top: 60px;
+}
+#name{
+  font-size: 45px;
+}
+/* .subHeading
+{
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center; */
+/* } */
+.main
+{
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  /* border: red solid 2px;*/
+} 
+.left
+{
+  width: 48%;
+  float: left;
+  /* border: black solid 2px; */
+}
+.right
+{
+  width: 48%;
+  float: right;
+  border: black solid 2px;
+}
+.blockHeadingBox
+{
+  width: 100%;
+  font-size: 25px;
+  background-color: rgb(167, 165, 169);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.blockHeading
+{
+  
+  transform: translateX(-9%);
+  animation: move 5s linear infinite;
+}
+@keyframes move{
+  to{
+    transform: translateX(8%);
+  }
+}
+.subBlockHeading
+{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content{
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+/* @keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+  
+  /* The element to apply the animation to */
+  /* div {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 2s;
+    padding-top: 30px;
+    animation-iteration-count: infinite;
+  } */ 
