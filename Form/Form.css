@@ -45,7 +45,8 @@
     /* border: red solid 2px; */
 }
 input{
-    width: 285px;
+    /* width: 285px; */
+    width: 220px;
     height: 40px;
     margin-right: 20px;
     font-size: 25px;
