@@ -1,0 +1,36 @@
+#main
+{
+   height: 800px;
+   width: 800px;
+   border: red solid 2px;
+   margin: auto;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+#inputSec
+{
+    text-align: center;
+}
+#taskInput
+{
+    height: 30px;
+    width: 60%;
+    font-size: 23px;
+}
+button{
+    height: 36px;
+    width: 100px;
+    font-size: 23px;
+}
+#taskList
+{
+    font-size: 30px;
+}
+.completed-task {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 40px;
+  }
+  
