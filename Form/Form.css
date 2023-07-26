@@ -86,6 +86,10 @@ form{
 #gender
 {
     margin: 0;
+    width: 70px;
+    position: relative;
+    right: -10px;
+    top: 12px;
 }
 /* div{
     height: auto;
