@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width={device-width}, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Palindrome.css">
+</head>
+<body>
+    <div class="main">
+        <div class="palindromeChecker">
+            <form>
+            <div><input type="text" id="screen" name ="screen" placeholder=""></div>
+            <div>
+                <input type="button" value="Check" id="check" onclick="onCheck()">
+            </div>
+            <div>
+                <ul id="list">
+
+                </ul>
+            </div>
+        </form>
+        </div>
+    </div>
+    <script>
+        function onCheck(){
+            // string.value.trim();
+            var sc = document.getElementById("screen");
+            var string = sc.value;
+            const len= string.length
+            // var x = document.getElementById("screen");
+            var t = document.getElementById("list");
+            for(var i=0;i<len/2;i++)
+            {
+                if(string[i]!=string[len-1-i])
+                {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = string+" is not a palindrome number";
+                    listItem.classList.add("result");
+                    t.appendChild(listItem);
+                    sc.value = " ";
+                    return;
+                }
+            }
+            const listItem = document.createElement("li");
+            listItem.textContent = string +" is a palindrome";
+            // to add css
+            listItem.classList.add("result");
+            t.appendChild(listItem);
+            sc.value = " ";
+        }
+    </script>
+</body>
+</html>

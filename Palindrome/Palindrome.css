@@ -12,7 +12,7 @@
     align-items: center;    
     background-color: aquamarine;
 }
-.Calci
+.palindromeChecker
 {
     height: 540px;
     width: 420px;
@@ -33,24 +33,7 @@
     font-size: 40px;
     padding: 20px;
 }
-.Button_screen
-{
-    margin-left: 50px;
-    margin-top: 20px;
-    /* margin-top: 40px; */
-}
-.button
-{
-    height: 65px;
-    width: 65px;
-    margin: 5px;
-    border-color: rgb(7, 131, 247) ;
-    font-size: 40px;
-    box-shadow: 0px 2px 10px 0px #888888 ;
-    /* 2px ---width and 10px is for bluring blending */
-    border-top-left-radius: 10px;
-}
-#equals
+#check
 {
     height: 60px;
     width: 300px;
@@ -59,4 +42,9 @@
     margin-top: 20px;
     font-size: 40px;
     background-color:rgb(7, 131, 247) ;
+}
+.result
+{
+    font-size: 25px;
+    margin: 30px;
 }

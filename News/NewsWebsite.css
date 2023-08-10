@@ -165,3 +165,38 @@ footer{
 {
     text-decoration: none;
 } */
+
+/* SubFile */
+.right_sub{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    float: right;
+    padding-top: 8rem;
+    padding-right: 3rem;
+    /* padding-left: 0rem; */
+    /* align-items: center; */
+    /* flex: 1 1 48rem; */
+    /* padding-top: 6rem ; */   
+}
+.middle_sub
+{
+    height: 100%;
+    width:60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: right;
+    /* align-items: center; */
+    /* padding-top: 6rem ; */
+    padding-top: 6rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+#rightimg1
+{
+    height: 420px;
+    width: 800px;
+}
